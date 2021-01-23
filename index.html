@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <title>Dolphin's Brother</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&amp;display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="logo_2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <style>
+       @font-face {
+            font-family: "IzhitsaRegular";
+            src: url("fonts/IzhitsaRegular.eot");
+            src: url("fonts/IzhitsaRegular.eot?#iefix")format("embedded-opentype"),
+            url("fonts/IzhitsaRegular.woff") format("woff"),
+            url("fonts/IzhitsaRegular.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+    </style>
+    <script type="text/javascript">
+var phrases = [
+    "СМЕЛЬЧАК И ВЕТЕР",
+    "СКОМОРОХ",
+    "ВЕРНАЯ ЖЕНА",
+    "САДОВНИК",
+    "БЛУЖДАЮТ ТЕНИ",
+    "ВНЕЗАПНАЯ ГОЛОВА",
+    "ШАР ГОЛУБОЙ",
+    "ЗЛОДЕЙ И ШАПКА",
+    "ОТ ЖЕНЩИН КРУГОМ ГОЛОВА",
+    "РЫБАК",
+    "МОТОЦИКЛ",
+    "ХОЛОДНОЕ ТЕЛО",
+    "ДУРАК И МОЛНИЯ",
+    "ЛЕШИЙ ОБИДЕЛСЯ",
+    "ДВА ВОРА И МОНЕТА",
+    "ЛЮБОВЬ И ПРОПЕЛЛЕР",
+    "КАМНЕМ ПО ГОЛОВЕ",
+    "С ТЕХ ПОР КАК ОН УШЁЛ",
+    "ИСТОРИЯ, ОКУТАННАЯ ТАЙНОЙ",
+    "ЛЕСНЫЕ РАЗБОЙНИКИ",
+    "МАРИЯ",
+    "КОРОЛЬ И ШУТ",
+    "ДВА ДРУГА",
+    "САПОГИ",
+    "ОХОТНИК",
+    "ПАНИКА В СЕЛЕ",
+    "ИСТИННЫЙ УБИЙЦА",
+    "ЛЕСНИК",
+    "ПОМОГИ МНЕ!",
+    "ВОСПОМИНАНИЯ О МЁРТВОЙ ЖЕНЩИНЕ",
+    "КУКОЛЬНЫЙ ТЕАТР",
+    "ВАЛЕТ И ДАМА",
+    "ВЕСЁЛЫЕ ТРОЛЛИ",
+    "ВЯЧЕСЛАВ",
+    "ОТЕЦ И МАСКИ",
+    "СКАЗКА ПРО ДРАКОНА",
+    "ИНСТРУМЕНТ",
+    "СОБРАНИЕ",
+    "КУКЛА КОЛДУНА",
+    "НАБЛЮДАТЕЛЬ",
+    "БЕДНЯЖКА",
+    "ПРЫГНУ СО СКАЛЫ",
+    "ДЕВУШКА И ГРАФ",
+    "ПЕСНЯ МУШКЕТЁРОВ",
+    "ТЯНИ",
+    "УТРЕННИЙ РАССВЕТ",
+    "СОСИСКА",
+    "КАРАПУЗ",
+    "СПЯТИЛ ОТЕЦ",
+    "ВЕДЬМА И ОСЁЛ",
+    "ЕКАТЕРИНА",
+    "ПРЕРВАННАЯ ЛЮБОВЬ ИЛИ АРБУЗНАЯ КОРКА",
+    "ГОЛЫЕ КОКИ",
+    "ЗАБЫТЫЕ БОТИНКИ",
+    "ЕЛИ МЯСО МУЖИКИ",
+    "ПЬЕСА",
+    "САПОГИ МЕРТВЕЦА",
+    "ИСТОРИЯ О МЁРТВОЙ ЖЕНЩИНЕ",
+    "ОН НЕ ЗНАЕТ, ЧТО ТАКОЕ ЖИТЬ!",
+    "ДЕД НА СВАДЬБЕ",
+    "ЗАПРЕТ ОТЦА",
+    "КУЗНЕЦ",
+    "РАЗГОВОР С ГОБЛИНОМ",
+    "ВОР, ГРАФ И ГРАФИНЯ",
+    "ЧТО ВИДЕЛ МАЛЫШ",
+    "НЕВЕСТА ПАЛАЧА",
+    "МАСТЕР ПРИГЛАШАЕТ ГОСТИ",
+    "БРОДЯГА И СТАРИК",
+    "СМЕРТЬ ХАЛДЕЯ",
+    "ПОМНЯТ С ГОРЕЧЬЮ ДРЕВЛЯНЕ (МУХИ)",
+    "ПРО ИВАНА",
+    "ВСПОМИНАНИЯ О БЫЛОЙ ЛЮБВИ",
+    "ГИМН ШУТА",
+    "ПРОКЛЯТЫЙ СТАРЫЙ ДОМ",
+    "ТАЙНА ХОЗЯЙКИ СТАРИННЫХ ЧАСОВ",
+    "КУЗЬМА И БАРИН",
+    "ПИРАТ",
+    "СКОТНЫЙ ДВОР",
+    "ВОЗВРАЩЕНИЕ КОЛДУНА",
+    "ЗЛОВЕЩИЙ КУЗЕН",
+    "ОТВЕТ - ЛЮТАЯ МЕСТЬ?",
+    "РОГАТЫЙ",
+    "ДВУХГОЛОВЫЙ ОТПРЫСК",
+    "ДВА МОНАХА В ОДНУ НОЧЬ",
+    "КТО ЭТО ВСЁ ПРИДУМАЛ?",
+    "ПИВНОЙ ЧЕРЕП",
+    "ПАРЕНЬ И ЛЕШИЙ",
+    "ПОХОРОНЫ ПАНКА",
+    "ВОСПОМИНАНИЯ О БЫЛОЙ ЛЮБВИ",
+    "ВОЛОСОКРАД",
+    "МЁРТВЫЙ АНАРХИСТ",
+    "СМЕШНОЙ СОВЕТ",
+    "НЕКРОМАНТ",
+    "ЗАЩИТНИК СВИНЕЙ",
+    "ГЕНРИХ И СМЕРТЬ",
+    "ЖАЛЬ, НЕТ РУЖЬЯ!",
+    "ПРЕДСТАВЛЯЮ Я",
+    "МОЙ ХАРАКТЕР",
+    "ПЕСЕНКА ПЬЯНОГО ДЕДА",
+    "ВОДЯНОЙ",
+    "ВДОВА И ГОРБУН",
+    "ВИНО ХОББИТОВ",
+    "РАЗБОРКИ ИЗ-ЗА БАБ",
+    "УТОПЛЕННИК",
+    "МЕДВЕДЬ",
+    "ПЬЯНКА",
+    "ХАРДКОР ПО-РУССКИ",
+    "ВОЛШЕБНЫЙ ГЛАЗ СТАРИКА АЛОНСА",
+    "ИСПОВЕДЬ ВАМПИРА",
+    "МЕСТЬ ГАРРИ",
+    "СЕВЕРНЫЙ ФЛОТ",
+    "ИДОЛ",
+    "БУНТ НА КОРАБЛЕ!",
+    "ХОРОШИЙ ПИРАТ - МЁРТВЫЙ ПИРАТ",
+    "РЫЦАРЬ",
+    "ЗВОНОК",
+    "ИНКВИЗИТОР",
+    "ЗАДИРА И СОЛДАТ",
+    "РАНЕНЫЙ ВОИН",
+    "ХОЗЯИН ЛЕСА",
+    "МАРИОНЕТКИ",
+    "МАСКА",
+    "РОМ",
+    "ГРОБОВЩИК",
+    "ДОЧКА ВУРДАЛАКА",
+    "СВОЙ СРЕДИ ЧУЖИХ",
+    "ОТРАЖЕНИЕ",
+    "ТА ЧТО СМОТРИТ ИЗ ПРУДА",
+    "В ГОСТЯХ У СОСЕДА",
+    "ХОЗЯИН ТАВЕРНЫ",
+    "ПИСАТЕЛЬ ГУДВИН",
+    "ДЖОКЕР",
+    "ПЛЯСКА НА МОГИЛЕ",
+    "МАТЁРЫЙ ВОЛК",
+    "ПРОДАВЕЦ КОШМАРОВ",
+    "ГОРОД МЕРТВЕЦОВ (РЕЦЕПТ МОНАХА)",
+    "КРАСАВЕЦ-МЕРЗАВЕЦ",
+    "ТЕНЬ КЛОУНА",
+    "ДАГОН",
+    "ДВОЕ ПРОТИВ ВСЕХ",
+    "В ПАРИЖ – ДОМОЙ",
+    "РИЧАРД ГОРДОН",
+    "ФРЕД",
+    "САНТА-КЛАУС",
+    "КОДА",
+    "НЕВИДИМКА",
+    "A.M.T.V.",
+    "ХОДИТ ЗОМБИ",
+    "СМЕШНОЙ ПИСТОЛЕТ",
+    "ВЕСТНИК",
+    "КЛЕЙМЁННЫЙ ОГНЁМ",
+    "ТРИНАДЦАТАЯ РАНА",
+    "СУФЛЁР",
+    "ПОСЛАНИЕ",
+    "ТЕАТРАЛЬНЫЙ ДЕМОН",
+    "КИНОГЕРОЙ",
+    "ФОКУСНИК",
+    "ТАНЕЦ ЗЛОБНОГО ГЕНИЯ",
+    "ЭНДИ КАУФМАН",
+    "МАДАМ ЖОРЖЕТТ",
+    "БУНТАРЬ",
+    "ТЕМНЫЙ УЧИТЕЛЬ",
+    "КОРОЛЬ ВЕЧНОГО СНА",
+    "БАЛ ЛИЦЕМЕРОВ",
+    "ЗАЩИТНИКИ",
+    "ДОБРЫЕ ЛЮДИ ",
+    "БАЛЛАДА О БЕДНОМ ЦИРЮЛЬНИКЕ ",
+    "КАТОРЖНИК ",
+    "ПИРОЖКИ ОТ ЛОВЕТТ",
+    "ПРАЗДНИК КРОВИ",
+    "МАШИНА СМЕРТИ ",
+    "СМЕРТНЫЙ ПРИГОВОР",
+    "ПРИЗНАНИЕ ЛОВЕТТ ",
+    "ПЕРВАЯ КРОВЬ ",
+    "НОВАЯ ПИРОЖКОВАЯ ",
+    "СЧАСТЬЕ?",
+    "СМЕРТЬ НА БАЛУ ",
+    "МАЛЕНЬКИЙ ОСТРОВ ",
+    "НЕУПОКОЕННЫЙ ",
+    "ВЫХОД СУДЬИ ",
+    "ХРИСТОВА НЕВЕСТА ",
+    "СВЯЩЕННИК БОЛЬШЕ НИЧЕГО НЕ СКАЖЕТ ",
+    "НЕБЕСНЫЙ СУД ",
+    "ПОЧЕМУ ТЫ ЖИВА? ",
+    "СМЕРТЬ ЛОВЕТТ ",
+    "НА КРАЮ",
+
+];
+    </script>
+  </head>
+
+  <body>
+    <div id="teams">
+        <span id="teamOne">
+            <input type="radio" id="teamOneRadio"
+             name="teams" value="1" checked>
+            <label for="teamOneRadio">Король</label>
+        </span>
+        <span id="teamTwo">
+            <label for="teamTwoRadio">Шут</label> 
+            <input type="radio" id="teamTwoRadio"
+             name="teams" value="2">
+            
+        </span>
+    </div>
+    <img id="logo" src="logo_1.png">
+    <button id="min">1min</button>
+    <button id="onehalf" >1.5min</button>
+    <button id="reset">Reset</button>
+    <button id="minus" class="disabledBtn" disabled=true> - </button>
+    <button id="plus" class="disabledBtn" disabled=true> + </button>
+    <button id="play">Play</button>
+    <div id="timer">0:00</div>
+    <div id="text"></div> 
+    <div id="total"></div>
+    <input type="text" name="time" id="timerInput" value="">
+  
+
+    <div id="endwindow">
+        <div Id="endtext">ВРЕМЯ ЗАКОНЧИЛОСЬ. <br>
+        ВАШ СЧЁТ:<div id="endtotal"></div>
+        <button id="endbutton">ОК</button></div>
+    </div>
+    <br>
+    <div id="menu"><button id="resstartBtn">Новая игра</button>
+            <button id="continueBtn">Продолжить</button>
+            <div id="teamOneScore">Король <br> <span id="ttlOne">0</span></div>
+            <div id="teamTwoScore">Шут<br><span id="ttlTwo">0</span></div>
+           
+            <details onmousedown="return false" id="pointsOfRound"> <summary>Очки за каждый раунд</summary> <div >Король <br> <span id="scoreOne" class="scoreRound">0</span> <hr><span id="scoreTwo" class="scoreRound">0</span><br> Шут </div> </details>
+    </div>
+    <script type="text/javascript">
+       var lastTouchEnd = 0;
+        document.addEventListener('touchend', function (event) {
+          var now = (new Date()).getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+          lastTouchEnd = now;
+    }, false);
+         $(document).bind("touchstart", function(e) {
+            e.preventDefault();
+            var orig = e.originalEvent;
+            var x = orig.changedTouches[0].pageX;
+            var y = orig.changedTouches[0].pageY;
+        $("#timer").css({top: y, left: x});
+        });
+  </script>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script>
+
+  var i = 0;
+
+ 
+  $(function () {
+    $('#plus').click(function () {
+                i = Math.floor(Math.random() * phrases.length)
+                showText(this, phrases[i]);
+            }); ;
+            function showText(plus, text) {
+                var plus = $('#plus');
+                var textmsg = $('#text');
+                plus.fadeOut(0, function () {
+                    textmsg.html(text);
+                    plus.fadeIn(0);
+                });}
+            
+    $('#minus').click(function () {
+                i = Math.floor(Math.random() * phrases.length)
+                showText(this, phrases[i]);
+            }); ;
+ 
+    $('#play').click(function () {
+        if (timerInput.value != 60 && timerInput.value != 90) {
+            alert('укажите время');}
+        else {
+                i = Math.floor(Math.random() * phrases.length)
+                showText(this, phrases[i]);
+            }}); ;
+        function showText(minus, text) {
+                var minus = $('#minus');
+                var textmsg = $('#text');
+                minus.fadeOut(0, function () {
+                    textmsg.html(text);
+                    minus.fadeIn(0);
+                });
+            }
+            });
+ 
+
+      var reset = document.getElementById('reset');
+      var timerInput = document.getElementById('timerInput');
+      var timerShow = document.getElementById('timer');
+      var plus = document.getElementById('plus');
+      var minus = document.getElementById('minus');
+      var play = document.getElementById('play');
+      var text = document.getElementById('text');
+      var randIndex = Math.floor(Math.random() * phrases.length);
+      var total = document.getElementById('total'), num = +total.innerHTML;
+      var timeMinut = timerInput.value;
+      var min = document.getElementById('min');
+      var onehalf = document.getElementById('onehalf');
+      var endwindow = document.getElementById('endwindow');
+      var endbutton = document.getElementById('endbutton');
+      var teamOneRadio = document.getElementById('teamOneRadio');
+      var teamTwoRadio = document.getElementById('teamTwoRadio');
+      var teams = document.getElementsByName('teams');
+      var ttlOne = document.getElementById('ttlOne');
+      var ttlTwo = document.getElementById('ttlTwo');
+      var scoreOne = document.getElementById('scoreOne');
+      var scoreTwo = document.getElementById('scoreTwo');
+      var x = teamOneRadio.checked;
+      var blank = ".";
+      var space = " ";
+      var menu = document.getElementById('menu');
+      var logo = document.getElementById('logo');
+      var continueBtn = document.getElementById('continueBtn');
+      var resstartBtn = document.getElementById('resstartBtn');
+
+      
+      function addNum() {
+        num++;
+      total.innerHTML = num;}
+
+      function ScoreOfRound() {
+      x = teamOneRadio.checked;
+      if(x == true){
+        scoreOne.innerHTML = space + scoreOne.innerHTML + space + blank + space  + total.innerHTML + space;}
+      else { 
+        scoreTwo.innerHTML = space + scoreTwo.innerHTML + space + blank + space + total.innerHTML + space
+      ;}}
+
+      function ttl() {
+      x = teamOneRadio.checked;
+      var totalNum = parseInt(total.innerHTML);
+      var ttlOneNum = parseInt(ttlOne.innerHTML);
+      var ttlTwoNum = parseInt(ttlTwo.innerHTML);
+      if(x == true){
+        ttlOne.innerHTML = ttlOneNum + totalNum;}
+      else { 
+        ttlTwo.innerHTML = ttlTwoNum + totalNum
+      ;}}
+
+     
+
+      play.addEventListener('click', function() {
+        if (timerInput.value != 60 && timerInput.value != 90) {
+           ;}
+        else {
+
+        timeMinut = parseInt(timerInput.value);
+        this.disabled=true;
+        this.classList.toggle('disabledBtn'); 
+        plus.disabled=false;
+        minus.disabled=false;
+        plus.classList.toggle('disabledBtn'); 
+        minus.classList.toggle('disabledBtn'); 
+        timer = setInterval(function () {
+            seconds = timeMinut%60;
+            minutes = timeMinut/60%60;
+              if (timeMinut <= 0) {
+                  clearInterval(timerShow);
+                  endwindow.style.display="block";
+            } else if (timeMinut <= 91 && timeMinut >= 1)  {
+              var strTimer = `${Math.trunc(minutes)}:${seconds}`;
+              timerShow.innerHTML = strTimer;
+              }
+          --timeMinut;
+          }, 1000);
+            }});
+
+       function switchRaido () {
+         if(x == true){
+            teamTwoRadio.checked = true;}
+         else {
+           teamOneRadio.checked = true;
+         }
+         };
+
+      plus.addEventListener('click', function() {
+        text.textContent =(phrases[randIndex]);
+        num++;
+        total.innerHTML = num;
+        endtotal.innerHTML = num;
+         });
+
+      minus.addEventListener('click', function() {
+        num--;
+        total.innerHTML = num;
+        endtotal.innerHTML = total.innerHTML;
+         });
+
+      min.addEventListener('click', function() {
+          timerInput.value='60';
+          play.disabled=false;
+          onehalf.disabled=true;
+          this.disabled=true;
+          this.classList.add('disabledBtn');
+        });
+
+      onehalf.addEventListener('click', function() {
+          timerInput.value='90';
+          play.disabled=false;
+          this.disabled=true;
+          min.disabled=true;
+          this.classList.add('disabledBtn');
+         });
+
+        function resetAll() {
+            text.textContent = " ";
+            timerShow.textContent = "0:00";
+            timerInput.value = "61";
+            num = 0;
+            total.textContent = " ";
+            clearInterval(timer);
+            min.disabled=false;
+            onehalf.disabled=false;
+            play.disabled=false;
+            endwindow.style.display = "none";
+            minus.disabled=true;
+            plus.disabled=true;
+            plus.classList.toggle('disabledBtn'); 
+            minus.classList.toggle('disabledBtn'); 
+            play.classList.toggle('disabledBtn');
+            min.classList.remove('disabledBtn');
+            onehalf.classList.remove('disabledBtn');
+        };
+
+        function clearAll() {
+            ScoreOfRound();
+            ttl();
+            switchRaido();
+            resetAll();
+
+        };
+        
+
+        reset.addEventListener('click', resetAll);
+        endbutton.addEventListener('click', clearAll);
+
+        logo.addEventListener('click',function () {
+            menu.style.display = "block";
+        });
+
+        continueBtn.addEventListener('click',function () {
+            menu.style.display = "none";
+        });
+
+        resstartBtn.addEventListener('click',function () {
+            location.reload();
+        });
+      
+  </script>
+
+
+
+
+
+ 
+</html>

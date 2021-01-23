@@ -1,0 +1,394 @@
+html {
+  -webkit-text-size-adjust: 100%;
+   text-size-adjust: 100%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+    overflow: hidden;
+  
+}
+
+button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+body {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: fixed;
+}
+#minus {
+    height: 8%;
+    width: 16.5%;
+    top: 28%;
+    left: 10%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    color: #edef71;
+    box-shadow: 1px -3px rgb(0,0,0) inset;
+   
+}
+
+#plus {
+    height: 8%;
+    width: 16.5%;
+    top: 28%;
+    left: 28.5%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    color: #edef71;
+    box-shadow: 1px -3px rgb(0,0,0) inset;  
+}
+
+#play {
+    height: 8%;
+    width: 35%;
+    top: 19%;
+    left: 10%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: absolute;
+    font: 60px Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #edef71;
+    box-shadow: 2px -3px rgb(0,0,0) inset;
+   
+}
+
+#text{
+    margin-top: 10%;
+    vertical-align: middle;
+    font-size: 55px;
+    color: #edef71;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    position: relative;
+    top: 25%;
+}
+#timer{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 6em;
+    color: #edef71;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    position: relative;
+    top: 4em;
+   
+
+}
+#timerInput {
+    display: none;
+}
+
+#total{
+    margin-top: 5%;
+    vertical-align: middle;
+    font-size: 80px;
+    color: #edef71;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    position: relative;
+    top: 25%;
+}
+#min {
+        height: 8%;
+        width: 16.5%;
+        top: 19%;
+        left: 55%;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #edef71;
+        text-decoration: none;
+        border-radius: 3px;
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+        text-align: center;
+}
+#onehalf {
+        height: 8%;
+        width: 16.5%;
+        top: 19%;
+        left: 73.5%;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #edef71;
+        text-decoration: none;
+        border-radius: 3px;
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+}
+
+button {
+   background-color:  #1f2315;
+}
+#reset {
+        height: 8%;
+        width: 35%;
+        top: 28%;
+        left: 55%;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #edef71;
+        text-decoration: none;
+        border-radius: 3px;
+        background: rgb(210 40 40);
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+     
+        
+}
+
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 240px;
+    width: 360px;
+}
+
+#endwindow {
+    width: 95%;
+    height: 60%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)), url(logo_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 44%;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    color: #dfff2f;
+}
+    
+}
+#endwindow:target {display: block;}
+
+#endtext {
+    font-size: 75px;
+    font-family: "IzhitsaRegular";
+    font-weight: 700;
+    color: #dfff2f;
+    margin-top: 20%;
+
+}
+
+
+#endbutton {
+    height: 80px;
+    width: 25.5%;
+    margin-top: 25%;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 1px -3px rgb(0,0,0) inset;
+    transition: 1.2s;
+}
+
+#menu {
+    display: none;
+    width: 95%;
+    height: 60%;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #352121;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: #2a3131;
+    font-size: 75px;
+    font-family: "IzhitsaRegular";
+    color: #dfff2f;
+}   
+#resstartBtn {
+    height: 15%;
+    width: 35%;
+    top: 75%;
+    left: 57.5%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: absolute;
+    font: 40px "IzhitsaRegular";
+    font-weight: bold;
+    color: #edef71; 
+    box-shadow: 2px -3px rgb(0,0,0) inset;
+    background-color:  #1f2315;
+
+}
+#continueBtn {
+    height: 15%;
+    width: 35%;
+    top: 75%;
+    left: 12%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: absolute;
+    font: 40px "IzhitsaRegular";
+    font-weight: bold;
+    color: #edef71;  
+    box-shadow: 2px -3px rgb(0,0,0) inset;
+    background-color:  #1f2315;
+}
+
+#teams {
+    margin: 15px;
+    padding: 15px;
+}
+
+#teamOneScore {
+        height: 8%;
+        width: 35%;
+        top: 3%;
+        left: 10%;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+}
+
+#teamTwoScore {
+    height: 8%;
+    width: 35%;
+    top: 3%;
+    left: 55%;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: absolute;
+    color: #edef71;
+}
+
+#pointsOfRound {
+        height: 8%;
+        width: 94%;
+        top: 35%;
+        left: 3%;
+        margin: auto;
+        position: absolute;
+        font-size: 35px;
+        font-family: "IzhitsaRegular";
+        color: #edef71;
+ 
+}
+
+label {
+  margin-right: 15px;
+  line-height: 32px;
+  font-size: 32px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #999;
+  transition: 1.2s all linear;
+  outline: none;
+  position: relative;
+  top: 4px;
+  color: #d5ef71;
+}
+
+input:checked {
+  border: 14px solid #dfff2f;
+}
+
+
+
+.disabledBtn {
+    background-color:  #000;
+    box-shadow: 0 -0px #40777b;
+    color: #352121;
+    
+}
+
+.scoreRound {
+    text-align: center;
+    font-family: "IzhitsaRegular";
+    font-style: normal;
+}
+
+
+
+#teamOne {
+    float: left;
+    margin-left: 5%;
+    font-family: "IzhitsaRegular";
+    color: #edef71;
+
+}
+
+
+#teamTwo {
+    float: right;
+    margin-right: 5%;
+    font-family: "IzhitsaRegular";
+    color: #edef71;
+}
